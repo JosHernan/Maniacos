@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maniacos</title>
+    <%= favicon_link_tag 'navbar-icon.png' %>
+    <!-- Fonts -->
+     
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag 'application' ,  'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <%= yield :css %>
+  
+  </head>
+  <body>
+    
+      <%= render :partial => "layouts/nav" %>
+     
+            <%= yield %>
+       
+    
+  </body>
+</html>
+
